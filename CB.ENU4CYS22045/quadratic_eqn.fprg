@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22045"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:58:37 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDA4MjsyMDIyLTExLTA0OzA5OjMxOjMyIEFNOzMwNTk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDA4MjsyMDIyLTExLTA0OzEwOjU4OjM3IEFNOzM7MzE3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="finding roots of a quadratic eqn"/>
+            <declare name="quadraticeqn" type="String" array="False" size=""/>
+            <declare name="x1, x2" type="Real" array="False" size=""/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter quadratic eqn&quot;" newline="True"/>
+            <input variable="quadraticeqn"/>
+            <output expression="&quot;enter coefficient of x^2&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter the coefficient of x&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;enter the constant&quot;" newline="True"/>
+            <input variable="c"/>
+            <comment text="root 1 of the quadratic eqn"/>
+            <assign variable="x1" expression="(-b+sqrt(b*b-4*a*c))/2*a"/>
+            <output expression="&quot;root 1 of the quadratiuc eqn is &quot; &amp; x1" newline="True"/>
+            <comment text="root 2 of the quadratic eqn"/>
+            <assign variable="x2" expression="(-b-sqrt(b*b-4*a*c))/2*a"/>
+            <output expression="&quot;root 2 of the quadratic eqn is &quot; &amp; x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
