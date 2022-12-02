@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22045"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:05:28 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDA4MjsyMDIyLTEyLTAyOzA5OjM4OjU2IEFNOzMwNzE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDA4MjsyMDIyLTEyLTAyOzEwOjA1OjI4IEFNOzI7MzE2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="multiplication table"/>
+            <comment text="i = first counter"/>
+            <comment text="x = secound counter"/>
+            <declare name="i, x, product" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <for variable="x" start="1" end="10" direction="inc" step="1">
+                    <assign variable="product" expression="i*x"/>
+                    <output expression="i &amp; &quot; * &quot; &amp; x &amp; &quot; = &quot; &amp;  product" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

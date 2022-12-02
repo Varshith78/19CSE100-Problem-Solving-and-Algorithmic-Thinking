@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22045"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:01:02 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDA4MjsyMDIyLTEyLTAyOzA5OjM4OjU2IEFNOzMwNzE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDA4MjsyMDIyLTEyLTAyOzEwOjAxOjAyIEFNOzE7MzE1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="addition table"/>
+            <comment text="i = first counter"/>
+            <comment text="x = secound counter"/>
+            <declare name="i, sum, x" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <for variable="x" start="1" end="10" direction="inc" step="1">
+                    <assign variable="sum" expression="i+x"/>
+                    <output expression="i &amp; &quot; + &quot; &amp; x &amp; &quot; = &quot; &amp;  sum" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
