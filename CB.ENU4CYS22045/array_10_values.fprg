@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Delhivery"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 09:54:23 AM"/>
+        <attribute name="created" value="RGVsaGl2ZXJ5O0RWLUxULVMtMTY4OTc7MjAyMi0xMi0wOTswOToyOTo1MyBBTTszMDE4"/>
+        <attribute name="edited" value="RGVsaGl2ZXJ5O0RWLUxULVMtMTY4OTc7MjAyMi0xMi0wOTswOTo1NDoyMyBBTTsyOzMxMjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to get array of 10 values "/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <declare name="numbers" type="Integer" array="True" size="10"/>
+            <comment text="condition to get an array"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter the value &quot;&amp;&quot;[&quot;&amp;index&amp;&quot;]&quot;" newline="True"/>
+                <input variable="number"/>
+                <assign variable="numbers[index]" expression="number"/>
+            </for>
+            <output expression="&quot;Array Contents&quot;" newline="True"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Array content numbers[&quot;&amp;index&amp;&quot;]=&quot;&amp;numbers[index]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
