@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22045"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 11:11:02 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDAzOTsyMDIzLTAxLTIwOzEwOjE0OjEyIEFNOzMwNTA="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDAzOTsyMDIzLTAxLTIwOzEwOjE0OjI2IEFNOzE7Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDAzOTsyMDIzLTAxLTIwOzA5OjA1OjQ0IEFNO2J1YmJsZV9zb3J0aW5nLmZwcmc7ODMxMA=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDAzOTsyMDIzLTAxLTIwOzExOjExOjAyIEFNOzg7MzE2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to sort the given values "/>
+            <declare name="i, j, n, c, x" type="Integer" array="False" size=""/>
+            <comment text="i,j are counter used for looping"/>
+            <output expression="&quot;Enter the number of values &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="val" type="Integer" array="True" size="n"/>
+            <comment text="enter the values to be sorted"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the values &quot;" newline="True"/>
+                <input variable="val[i]"/>
+            </for>
+            <comment text="conditions for sorting the given set of values in ascending order"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <for variable="j" start="0" end="n-1" direction="inc" step="1">
+                    <assign variable="c" expression="val[i]"/>
+                    <assign variable="x" expression="val[j]"/>
+                    <if expression="val[i]&lt;val[j]">
+                        <then>
+                            <assign variable="val[i]" expression="x"/>
+                            <assign variable="val[j]" expression="c"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <comment text="print the sorted values"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="val[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22045"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 11:10:48 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDAzOTsyMDIzLTAxLTIwOzA5OjA1OjQ0IEFNOzMwNjM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDAzOTsyMDIzLTAxLTIwOzA5OjUwOjMwIEFNOzE7Q0IuRU4uVTRDWVMyMjAwMjsyMDIyMjNNQVlDMDAzOTsyMDIyLTExLTA0OzEwOjEwOjE4IEFNO1N3YXBwaW5nX2FfYW5kX2IuZnByZzs4NDM2"/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDAzOTsyMDIzLTAxLTIwOzEwOjU5OjU0IEFNOzE7Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDAzOTsyMDIzLTAxLTIwOzEwOjE0OjEyIEFNO3NlbGVjdGlvbl9zb3J0LmZwcmc7ODMzNQ=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA0NTsyMDIyMjNNQVlDMDAzOTsyMDIzLTAxLTIwOzExOjEwOjQ4IEFNOzk7MzE3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to sort the given values "/>
+            <declare name="c, i, j, n, x" type="Integer" array="False" size=""/>
+            <comment text="i,j are counter used for looping"/>
+            <output expression="&quot;Enter the number of values &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="val" type="Integer" array="True" size="n"/>
+            <output expression="&quot;Enter the values &quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="val[i]"/>
+            </for>
+            <comment text="condition for sorting the given values"/>
+            <assign variable="x" expression="0"/>
+            <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                <for variable="j" start="0" end="n-2" direction="inc" step="1">
+                    <if expression="val[i]&gt;val[j+1]">
+                        <then>
+                            <assign variable="x" expression="val[i]"/>
+                            <assign variable="val[j]" expression="val[j+1]"/>
+                            <assign variable="val[j+1]" expression="x"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <comment text="print the sorted values"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="val[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
