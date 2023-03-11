@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Delhivery"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:53:35 AM"/>
+        <attribute name="created" value="RGVsaGl2ZXJ5O0RWLUxULVMtMTY4OTc7MjAyMi0xMC0yODswOToyMzoyMiBBTTszMDA3"/>
+        <attribute name="edited" value="RGVsaGl2ZXJ5O0RWLUxULVMtMTY4OTc7MjAyMi0xMC0yODsxMDo1MzozNSBBTTs4OzMxMjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RollNo" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter rollno&quot;" newline="True"/>
+            <input variable="rollno"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;enter name&quot;" newline="True"/>
+            <input variable="name"/>
+            <declare name="address" type="String" array="False" size=""/>
+            <output expression="&quot;enter address&quot;" newline="True"/>
+            <input variable="address"/>
+            <declare name="BloodGroup" type="String" array="False" size=""/>
+            <output expression="&quot;enter BloodGroup&quot;" newline="True"/>
+            <input variable="BloodGroup"/>
+            <declare name="phonenumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;phonenumber&quot;" newline="True"/>
+            <input variable="phonenumber"/>
+            <declare name="departmentassigned" type="String" array="False" size=""/>
+            <output expression="&quot;enter assigned deparment&quot;" newline="True"/>
+            <input variable="departmentassigned"/>
+            <declare name="sem" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the sem&quot;" newline="True"/>
+            <input variable="sem"/>
+            <declare name="subjectcode" type="Integer" array="False" size=""/>
+            <declare name="marks" type="Real" array="False" size=""/>
+            <for variable="subjectcode" start="1" end="3" direction="inc" step="1">
+                <output expression="&quot;enter subjectcode&quot;" newline="True"/>
+                <input variable="subjectcode"/>
+                <output expression="&quot;enter marks&quot;" newline="True"/>
+                <input variable="marks"/>
+            </for>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;enter total&quot;" newline="True"/>
+            <input variable="total"/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="avg" expression="total/3"/>
+            <output expression="&quot;your avg marks&quot;&amp;avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
